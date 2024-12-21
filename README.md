@@ -1,10 +1,5 @@
-# Node.js template
+# Program for practice
 
-This is a Node.js project.
-
-Add your [configuration](https://codesandbox.io/docs/projects/learn/setting-up/tasks) to optimize it for [CodeSandbox](https://codesandbox.io/p/dashboard).
-
-## Resources
-
-- [CodeSandbox — Docs](https://codesandbox.io/docs/learn)
-- [CodeSandbox — Discord](https://discord.gg/Ggarp3pX5H)
+1. Count Maximum Consecutive One's in the array
+2. Duplocate id remove from array
+3. PalinDrom Progam
