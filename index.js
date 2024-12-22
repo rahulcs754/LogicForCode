@@ -1,19 +1,27 @@
-// write program to show objectunderObject {a.b.c:'text'}
-// {a:{b:{c:'text'}}}
+// Create a function to find the second-largest number in an array.
+let first = "elbow";
+let second = "belwo";
 
-function makeobj(strd, text) {
-  let newObj = {};
-  let current = newObj;
-  let newArr = strd.split(".");
-  for (let index = 0; index < newArr.length; index++) {
-    if (newArr[newArr?.length - 1] == newArr[index]) {
-      current[newArr[index]] = text;
-    } else {
-      current[newArr[index]] = {};
-      current = current[newArr[index]];
+function sortArr(str) {
+  let temp;
+  const strArr = str.split("");
+  for (let i = 0; i < strArr.length; i++) {
+    for (let j = 0; j < strArr.length; j++) {
+      if (strArr[i].toLowerCase() > strArr[j].toLowerCase()) {
+        temp = strArr[i];
+        strArr[i] = strArr[j];
+        strArr[j] = temp;
+      }
     }
   }
-  return newObj;
+  return strArr.join("");
 }
 
-console.log(makeobj("a.b.c", "rahul"));
+function anagram(first, second) {
+  if (first?.length !== second?.length) return false;
+
+  if (sortArr(first) !== sortArr(second)) return false;
+  return true;
+}
+
+console.log(anagram(first, second));
