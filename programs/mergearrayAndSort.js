@@ -15,10 +15,12 @@ function mergeAndSort(arr1, arr2) {
 
   let temp;
   for (let i = 0; i < newArr?.length; i++) {
-    if (newArr[i] > newArr[i + 1]) {
-      temp = newArr[i + 1];
-      newArr[i + 1] = newArr[i];
-      newArr[i] = temp;
+    for (let j = 0; j < newArr.length; j++) {
+      if (newArr[j] > newArr[j + 1]) {
+        temp = newArr[j + 1];
+        newArr[j + 1] = newArr[j];
+        newArr[j] = temp;
+      }
     }
   }
 
